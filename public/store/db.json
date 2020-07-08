@@ -1,0 +1,129 @@
+{
+    "user":{
+
+    },
+    "courses":[
+        {
+            "id":1,
+            "title":"new course",
+            "rating":3,
+            "imageUrl":"/img/gallary/books-768426_1920.jpg",
+            "author":{
+
+            },
+            "lessons":[
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                },
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                },
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                },
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                },
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                },
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                },
+                {
+                    "id":1,
+                    "title":"get to know your camera",
+                    "duration":30,
+                    "type":"video",
+                    "watched":true,
+                    "videoUrl":"/img/gallary/books-768426_1920.jpg"
+                }
+            ],
+            "studentCount":10000,
+            "courseInfo":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?",
+            "review":[
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+                    
+                },
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+                    
+                },
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+                    
+                },
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+                    
+                },
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+                    
+                },
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+                    
+                },
+                {
+                    "id":1,
+                    "username":"ubong abasi",
+                    "rating":3,
+                    "review":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem soluta voluptatem totam nostrum reiciendis enim numquam deserunt, fuga blanditiis ducimus recusandae debitis hic ratione libero possimus nam, iusto cupiditate, repellat minus dignissimos nulla ad illum ex. Labore natus deserunt eveniet, ipsa ducimus officia exercitationem animi quos! Quis, magnam cum?"
+
+                }
+            ]
+
+
+        }
+    ]
+}
