@@ -32,9 +32,13 @@ function ProfileListCard(props) {
     const {primaryText,secondaryText,actionIcon,listIcon} = props;
     return (
         <ListItem>
-            <ListItemIcon>
-                {listIcon||null}
-            </ListItemIcon>
+            {
+                listIcon?(
+                    <ListItemIcon>
+                        {listIcon||null}
+                    </ListItemIcon>
+                ):''
+            }
             <ListItemText
                 secondaryTypographyProps = {{className:classes.secondary}}
                 primaryTypographyProps = {{className:classes.primary}}
