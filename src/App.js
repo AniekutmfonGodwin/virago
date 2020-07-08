@@ -5,11 +5,15 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { ProfileSection } from "./Components/Layouts";
+import {ProfileCard,ProfileListCard} from './Components/Cards';
 
-import {ProfileCard} from './Components/Cards';
-
-// import { 
-//  } from './Components/Pages';
+import FolderIcon from '@material-ui/icons/Folder';
+import DeleteIcon from '@material-ui/icons/Delete';
+import { Avatar } from '@material-ui/core';
+import { 
+  ProfilePage
+ } from './Components/Pages';
 
 
 function App() {
@@ -17,7 +21,17 @@ function App() {
     <div>
       <Switch>
           <Route exact path="/">
-            <ProfileCard/>
+            {
+              <ProfilePage/>||
+              <ProfileListCard secondaryText="secondary"
+              actionIcon={<FolderIcon />}
+              listIcon={<Avatar variant="square"  />}
+              />||
+              <ProfileSection heading="This is ">
+                hhjh
+              </ProfileSection>
+              ||
+              <ProfileCard/>}
             
           </Route>
       </Switch>

@@ -1,3 +1,3 @@
+import ProfilePage from "./ProfilePage";
 
-
-export {}
+export {ProfilePage}
