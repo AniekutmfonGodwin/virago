@@ -6,8 +6,10 @@ import {
   Route
 } from "react-router-dom";
 
-import { 
- } from './Components/Pages';
+import {ProfileCard} from './Components/Cards';
+
+// import { 
+//  } from './Components/Pages';
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
     <div>
       <Switch>
           <Route exact path="/">
-            
+            <ProfileCard/>
             
           </Route>
       </Switch>

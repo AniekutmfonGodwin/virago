@@ -1,4 +1,4 @@
+import ProfileCard from './ProfileCard';
 
 
-
-export {}
+export {ProfileCard}
