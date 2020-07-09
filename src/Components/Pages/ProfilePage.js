@@ -38,28 +38,28 @@ function ProfilePage(props) {
                         <Grid container>
                             <Grid item xs={12} md={6} >
                                 <ProfileListCard
-                                    listIcon={<CakeRoundedIcon/>}
+                                    listIcon={<CakeRoundedIcon color="secondary"/>}
                                     primaryText="Date of Birth"
                                     secondaryText = {new Date('31-dec-1960').toDateString()}
                                 />
                             </Grid>
                             <Grid item xs={12} md={6} >
                                 <ProfileListCard
-                                    listIcon={<WcIcon/>}
+                                    listIcon={<WcIcon color="secondary"/>}
                                     primaryText="Marital Status"
                                     secondaryText = {"single"}
                                 />
                             </Grid>
                             <Grid item xs={12} md={6} >
                                 <ProfileListCard
-                                    listIcon={<GroupSharpIcon/>}
+                                    listIcon={<GroupSharpIcon color="secondary"/>}
                                     primaryText="Gender"
                                     secondaryText = {"Female"}
                                 />
                             </Grid>
                             <Grid item xs={12} md={6} >
                                 <ProfileListCard
-                                    listIcon={<EmailIcon/>}
+                                    listIcon={<EmailIcon color="secondary"/>}
                                     actionIcon={<VerifiedUserIcon color="primary" />}
                                     primaryText="Email Address"
                                     secondaryText = {"aniesstudio8263@gmail.com"}
@@ -67,7 +67,7 @@ function ProfilePage(props) {
                             </Grid>
                             <Grid item xs={12} md={6} >
                                 <ProfileListCard
-                                    listIcon={<CallIcon/>}
+                                    listIcon={<CallIcon color="secondary"/>}
                                     actionIcon={<VerifiedUserIcon color="primary" />}
                                     primaryText="Phone Number"
                                     secondaryText = {"+2348123456789"}
@@ -75,7 +75,7 @@ function ProfilePage(props) {
                             </Grid>
                             <Grid item xs={12} md={6} >
                                 <ProfileListCard
-                                    listIcon={<GTranslateIcon/>}
+                                    listIcon={<GTranslateIcon color="secondary"/>}
                                     primaryText="Language"
                                     secondaryText = {['English','Yoruba'].join(',')}
                                 />
@@ -86,13 +86,14 @@ function ProfilePage(props) {
 
                     {/* Accordion section */}
 
+                    {/* offer not match */}
                     <Accordion>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
-                        // id="panel1a-header"
+                        id="offer-matched"
                     >
-                        <Typography variant="h5" >Accordion 1</Typography>
+                        <Typography variant="h5" >Offer:matched</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
@@ -102,6 +103,40 @@ function ProfilePage(props) {
                     </AccordionDetails>
                     </Accordion>
 
+                    {/* offer not match */}
+                    <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="offer not matched"
+                        id="offer-not-matched"
+                    >
+                        <Typography variant="h5" >Offer:not matched</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget.
+                        </Typography>
+                    </AccordionDetails>
+                    </Accordion>
+
+                    {/* offer draft */}
+                    <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="offer draft"
+                        id="offer-draft"
+                    >
+                        <Typography variant="h5" >Offer:draft</Typography>
+
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget.
+                        </Typography>
+                    </AccordionDetails>
+                    </Accordion>
                     
                 </Grid>
                 
