@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import { ProfileSection } from "./Components/Layouts";
-import {ProfileCard,ProfileListCard} from './Components/Cards';
+import {ProfileCard,ProfileListCard,OfferCard} from './Components/Cards';
 
 import FolderIcon from '@material-ui/icons/Folder';
 import { Avatar } from '@material-ui/core';
@@ -21,6 +21,7 @@ function App() {
       <Switch>
           <Route exact path="/">
             {
+              <OfferCard/>||
               <ProfilePage/>||
               <ProfileListCard secondaryText="secondary"
               actionIcon={<FolderIcon />}
