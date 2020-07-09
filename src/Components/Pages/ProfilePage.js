@@ -3,8 +3,12 @@ import React from 'react';
 import { 
     Grid
  } from '@material-ui/core';
-
-// import FolderIcon from '@material-ui/icons/Folder';
+ import EmailIcon from '@material-ui/icons/Email';
+ import CakeRoundedIcon from '@material-ui/icons/CakeRounded';
+ import WcIcon from '@material-ui/icons/Wc';
+ import GroupSharpIcon from '@material-ui/icons/GroupSharp';
+ import CallIcon from '@material-ui/icons/Call';
+ import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 // import DeleteIcon from '@material-ui/icons/Delete';
 
 import { ProfileCard,ProfileListCard } from "../Cards";
@@ -20,25 +24,51 @@ function ProfilePage(props) {
                 <Grid xs={12} md={9}>
                     <ProfileSection heading="Personal Infomation">
                         <Grid container>
-                            <Grid item xs={6} md={4} >
+                            <Grid item xs={12} md={4} >
                                 <ProfileListCard
+                                    listIcon={<CakeRoundedIcon/>}
                                     primaryText="Date of Birth"
-                                    secondaryText = {""}
+                                    secondaryText = {new Date('31-dec-1960').toLocaleDateString()}
                                 />
                             </Grid>
-                            <Grid item xs={6} md={4}>
-                                <ProfileListCard/>
+                            <Grid item xs={12} md={4} >
+                                <ProfileListCard
+                                    listIcon={<WcIcon/>}
+                                    primaryText="Marital Status"
+                                    secondaryText = {"single"}
+                                />
                             </Grid>
-                            <Grid item xs={12} md={4}>
-                                <ProfileListCard/>
+                            <Grid item xs={12} md={4} >
+                                <ProfileListCard
+                                    listIcon={<GroupSharpIcon/>}
+                                    primaryText="Gender"
+                                    secondaryText = {"Female"}
+                                />
                             </Grid>
-                            <Grid item xs={12} md={4}>
-                                <ProfileListCard/>
+                            <Grid item xs={12} md={4} >
+                                <ProfileListCard
+                                    listIcon={<EmailIcon/>}
+                                    actionIcon={<VerifiedUserIcon color="primary" />}
+                                    primaryText="Email Address"
+                                    secondaryText = {"aniesstudio8263@gmail.com"}
+                                />
                             </Grid>
+                            <Grid item xs={12} md={4} >
+                                <ProfileListCard
+                                    listIcon={<CallIcon/>}
+                                    actionIcon={<VerifiedUserIcon color="primary" />}
+                                    primaryText="Phone Number"
+                                    secondaryText = {"+2348123456789"}
+                                />
+                            </Grid>
+                            
                         </Grid>
                    
 
                     </ProfileSection>
+                </Grid>
+                <Grid item>
+
                 </Grid>
               
             </Grid>
