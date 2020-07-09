@@ -21,7 +21,10 @@ function ProfilePage(props) {
                     <ProfileSection heading="Personal Infomation">
                         <Grid container>
                             <Grid item xs={6} md={4} >
-                                <ProfileListCard/>
+                                <ProfileListCard
+                                    primaryText="Date of Birth"
+                                    secondaryText = {""}
+                                />
                             </Grid>
                             <Grid item xs={6} md={4}>
                                 <ProfileListCard/>
