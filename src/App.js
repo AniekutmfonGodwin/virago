@@ -9,7 +9,6 @@ import { ProfileSection } from "./Components/Layouts";
 import {ProfileCard,ProfileListCard} from './Components/Cards';
 
 import FolderIcon from '@material-ui/icons/Folder';
-import DeleteIcon from '@material-ui/icons/Delete';
 import { Avatar } from '@material-ui/core';
 import { 
   ProfilePage

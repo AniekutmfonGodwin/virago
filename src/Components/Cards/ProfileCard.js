@@ -44,13 +44,9 @@ function ProfileCard(props) {
                         {userName}
                     </Typography>
                     <Typography>
-                        {
-                            occupation.map((value,index,array)=>(
-                                <Typography variant="overline" display="inline">
-                                    {`${value}${(index<array.length-1)?',':''}`}
-                                </Typography>
-                            ))
-                        }
+                        <Typography variant="overline" display="inline">
+                            {occupation.join()}
+                        </Typography>
                     </Typography>
                 </Grid>
             </Box>

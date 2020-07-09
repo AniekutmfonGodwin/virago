@@ -30,8 +30,8 @@ function ProfileListCard(props) {
       {// i just change here
       listIcon ? <ListItemIcon>{listIcon || null}</ListItemIcon> : ""}
       <ListItemText
-        secondaryTypographyProps={{ className: classes.secondary }}
-        primaryTypographyProps={{ className: classes.primary }}
+        secondaryTypographyProps={{ className: classes.secondary,noWrap:true,title:secondaryText }}
+        primaryTypographyProps={{ className: classes.primary,noWrap:true,title:primaryText }}
         primary={primaryText}
         secondary={secondaryText || ""}
       />

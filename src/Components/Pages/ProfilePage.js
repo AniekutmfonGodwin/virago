@@ -1,7 +1,12 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import { 
-    Grid
+    Grid,
+    Typography,
+    Accordion,
+    AccordionSummary,
+    AccordionDetails
  } from '@material-ui/core';
  import EmailIcon from '@material-ui/icons/Email';
  import CakeRoundedIcon from '@material-ui/icons/CakeRounded';
@@ -9,43 +14,50 @@ import {
  import GroupSharpIcon from '@material-ui/icons/GroupSharp';
  import CallIcon from '@material-ui/icons/Call';
  import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-// import DeleteIcon from '@material-ui/icons/Delete';
+ import GTranslateIcon from '@material-ui/icons/GTranslate';
 
 import { ProfileCard,ProfileListCard } from "../Cards";
 import { ProfileSection } from "../Layouts";
+
+
+
+
+
+
+
 
 function ProfilePage(props) {
     return (
         <div>
             <Grid container>
-                <Grid xs={12} md={3}>
+                <Grid xs={12} md={3} item>
                     <ProfileCard/>
                 </Grid>
-                <Grid xs={12} md={9}>
+                <Grid xs={12} md={9} item>
                     <ProfileSection heading="Personal Infomation">
                         <Grid container>
-                            <Grid item xs={12} md={4} >
+                            <Grid item xs={12} md={6} >
                                 <ProfileListCard
                                     listIcon={<CakeRoundedIcon/>}
                                     primaryText="Date of Birth"
-                                    secondaryText = {new Date('31-dec-1960').toLocaleDateString()}
+                                    secondaryText = {new Date('31-dec-1960').toDateString()}
                                 />
                             </Grid>
-                            <Grid item xs={12} md={4} >
+                            <Grid item xs={12} md={6} >
                                 <ProfileListCard
                                     listIcon={<WcIcon/>}
                                     primaryText="Marital Status"
                                     secondaryText = {"single"}
                                 />
                             </Grid>
-                            <Grid item xs={12} md={4} >
+                            <Grid item xs={12} md={6} >
                                 <ProfileListCard
                                     listIcon={<GroupSharpIcon/>}
                                     primaryText="Gender"
                                     secondaryText = {"Female"}
                                 />
                             </Grid>
-                            <Grid item xs={12} md={4} >
+                            <Grid item xs={12} md={6} >
                                 <ProfileListCard
                                     listIcon={<EmailIcon/>}
                                     actionIcon={<VerifiedUserIcon color="primary" />}
@@ -53,7 +65,7 @@ function ProfilePage(props) {
                                     secondaryText = {"aniesstudio8263@gmail.com"}
                                 />
                             </Grid>
-                            <Grid item xs={12} md={4} >
+                            <Grid item xs={12} md={6} >
                                 <ProfileListCard
                                     listIcon={<CallIcon/>}
                                     actionIcon={<VerifiedUserIcon color="primary" />}
@@ -61,15 +73,38 @@ function ProfilePage(props) {
                                     secondaryText = {"+2348123456789"}
                                 />
                             </Grid>
+                            <Grid item xs={12} md={6} >
+                                <ProfileListCard
+                                    listIcon={<GTranslateIcon/>}
+                                    primaryText="Language"
+                                    secondaryText = {['English','Yoruba'].join(',')}
+                                />
+                            </Grid>
                             
                         </Grid>
-                   
-
                     </ProfileSection>
-                </Grid>
-                <Grid item>
 
+                    {/* Accordion section */}
+
+                    <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        // id="panel1a-header"
+                    >
+                        <Typography variant="h5" >Accordion 1</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget.
+                        </Typography>
+                    </AccordionDetails>
+                    </Accordion>
+
+                    
                 </Grid>
+                
               
             </Grid>
         </div>
