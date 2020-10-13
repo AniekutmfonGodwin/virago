@@ -3,4 +3,4 @@ import ProfileListCard from './ProfileListCard';
 import OfferCard from './OfferCard';
 
 
-export {ProfileCard,ProfileListCard,OfferCard}
+export {ProfileCard,ProfileListCard}
